@@ -1,0 +1,26 @@
+{
+  "name": "bulma-brianngan",
+  "version": "1.0.0",
+  "description": "Custom css for bulma",
+  "main": "sass/mystyles.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss ../assets/css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianngan/bulma-brianngan.git"
+  },
+  "author": "Brian Ngan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brianngan/bulma-brianngan/issues"
+  },
+  "homepage": "https://github.com/brianngan/bulma-brianngan#readme",
+  "devDependencies": {
+    "bulma": "^0.8.0",
+    "node-sass": "^4.13.1"
+  }
+}
