@@ -1,29 +1,81 @@
 @charset "utf-8";
-// Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,600,800&display=swap');
+// /* Vendor Dependencies */
+// @import "compass";
 
-$font-stack:    Helvetica, sans-serif;
+// /* Authored Dependencies */
+// @import "global/colors";
+// @import "global/mixins";
 
-// // Set your brand colors
-// $purple: blue;
-// $pink: #FA7C91;
-// $brown: #757763;
-// $beige-light: #D0D1CD;
-// $beige-lighter: #EFF0EB;
+// /* Patterns */
+// @import "global/tabs";
+// @import "global/modals";
 
-// // Update Bulma's global variables
+// /* Sections */
+// @import "global/header";
+// @import "global/footer";
+
+$body-size: 18px;
 $family-sans-serif: "Nunito", sans-serif;
-// $grey-dark: $brown;
-// $grey-light: $beige-light;
-// $primary: $purple;
-// $link: $pink;
-// $widescreen-enabled: false;
-// $fullhd-enabled: false;
+$body-color: #000000;
+$primary: #009FD1;
 
-// // Update some of Bulma's component variables
-// $body-background-color: $beige-lighter;
-// $control-border-width: 2px;
-// $input-border-color: transparent;
-// $input-shadow: none;
+$size-1: 3rem;
+$size-2: 2rem;
+$size-5: 1.5rem;
+$size-6: 1.2rem;
+
+$weight-normal: 400;
+$weight-semibold: 600;
+$weight-bold: 800;
+
+$tag-radius: 100px;
+
+$fullhd-enabled: false;
+$widescreen-enabled: false;
+$desktop: 1080px;
 
 @import "../node_modules/bulma/bulma.sass";
+
+p, a, li, br, code, strong {
+    font-size: $size-6;
+    line-height: 160%;
+    text-align: justify;
+    padding-bottom: $size-2;
+}
+
+a {
+    color: $primary;
+}
+
+a.logo {
+    line-height: $size-2;
+    font-weight: $weight-bold;
+    padding: 1rem;
+    font-size: $size-2;
+    color: $black;
+}
+
+a.footer-style:hover {
+    color:$primary;
+}
+/* footer style end */
+
+h1 {
+    font-size: $size-1;
+    font-weight: $weight-semibold;
+    line-height: 1.1em;
+    padding-bottom: .75em;
+}
+
+h4 {
+    font-size: $size-6;
+    font-weight: $weight-bold;
+    line-height: 1.1em;
+    padding-bottom: .75em;
+    text-align: justify;
+}
+
+.button {
+    font-weight: $weight-semibold;
+}
